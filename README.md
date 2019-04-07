@@ -8,19 +8,14 @@
     -   Increase social-interaction (???)
 
 ## Process Of Authentication (Spotify)
--   user goes to /
+-   user goes to / (**)
     -   Checks if 'access_token' is inside the URL
         -   If No
             -   Display a div that shows that they need to Authenticate
             -   user goes to Auth.html (***)
         -   If Yes
-            -   Show the recently played
+            -   Extract the access_token from the URL
+                -   Show the recently played
 -   user goes to Auth.html (***)
-    -   Checks if 'access_token' is inside the URL
-        - WHY???
-            -   After authenticating with Spotify using implicit-grant, it will return a access_token and state and scope and all these stuff in the URL
-                -   If No
-                    -   Authenticate On Spotify
-                -   If Yes
-                    -   Extract the access_token
-                    -   Redirect user to / with the query string access_token with the value    of the access token
+    -   redirect to Spotify Authentication
+        -   After Authentication, it will redirect to `/` that is given as request param (redirect_uri) (**)
