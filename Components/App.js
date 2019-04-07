@@ -41,6 +41,11 @@ class App extends React.Component {
     }
 
     render() {
+
+        let footer = (
+            <h6>This is done with all of my passion. Please support my work(s) on <a href='https://github.com/renabil/recentlyplayed'>GitHub</a></h6>
+        )
+        
         let map = this.state.recently_played ? this.state.recently_played.map(song => {
             console.log(song.track)
             return(
@@ -51,6 +56,7 @@ class App extends React.Component {
                     <a id='spotify-button' href={song.track.external_urls.spotify}>
                         <i className="fa fa-spotify spotify-button" aria-hidden="true"></i> Open In Spotify
                     </a>
+
                 </div>
             )
         }) : null
@@ -67,6 +73,8 @@ class App extends React.Component {
                 </ol>
 
                 <h5>Please note that your Access Token will expire in 1 Hour after Authentication, If it expires, Just do the steps above again!</h5>
+
+                {footer}
             </div>
         )
                 
