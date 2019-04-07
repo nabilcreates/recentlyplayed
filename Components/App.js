@@ -11,7 +11,7 @@ class App extends React.Component {
 
     componentDidMount() {
         if(document.URL.includes('access_token')){
-            let temp_at = document.URL.split('=')[1]
+            let temp_at = document.URL.split('=')[1].split('&')[0]
             console.log(temp_at)
             this.setState({
                 access_token: temp_at
