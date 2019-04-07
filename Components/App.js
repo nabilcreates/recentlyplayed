@@ -70,9 +70,13 @@ class App extends React.Component {
                     <li>Log in with your Spotify Account</li>
                     <li>Click on Accept when Prompted</li>
                     <li>You will be automatically redirected to the Home Page where you can see your recently played tracks!</li>
+                    <li>You can share with your friends or family members by copying the whole link and sharing it! The link is valud for 1 Hour after Authentication, Read below.</li>
                 </ol>
 
-                <h5>Please note that your Access Token will expire in 1 Hour after Authentication, If it expires, Just do the steps above again!</h5>
+                <h4>Please note that your Access Token will expire in 1 Hour after Authentication, If it expires, Just do the steps above again!</h4>
+
+                <h5>Please note that I DO NOT keep any of your Spotify email(s) or password(s) anywhere in the server. This website is fully client-based.</h5>
+
 
                 {footer}
             </div>
