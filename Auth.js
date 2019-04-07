@@ -4,7 +4,7 @@ let spotify_auth_link = 'https://accounts.spotify.com/authorize?client_id=3a89b2
 if(url.includes('access_token')){
     let access_token = url.split('#')[1].split('=')[1].split('&')[0]
     console.log(url)
-    document.getElementById('access_token').value = access_token
+    window.location.replace('/?access_token=' + access_token)
 }else{
     window.location.replace(spotify_auth_link)
 }
