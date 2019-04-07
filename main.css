@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500');
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: whitesmoke;
+}
+
+a{
+    color: whitesmoke;
+}
+
+#song{
+    padding: 15px;
+}
+
+#song:nth-of-type(2n) {
+    background: rgba(255, 255, 255, 0.03)
+}
+
+#song h1{
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+#song h3{
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    background: #333;
+    border: 0;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#container{
+    width: 95vw;
+    margin: auto;
+}
+
+#audio{
+    margin: 40px 0 0 0;
+    width: 90%;
+}
