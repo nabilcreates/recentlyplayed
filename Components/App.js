@@ -24,7 +24,7 @@ class App extends React.Component {
     }
 
     getCurrentPlayingSong(access_token) {
-            fetch('https://api.spotify.com/v1/me/player/recently-played', {
+            fetch('https://api.spotify.com/v1/me/player/recently-played?limit=50', {
                  method: 'GET',
                  headers: {
                      'Content-Type': 'application/json',
